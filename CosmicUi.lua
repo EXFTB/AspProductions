@@ -3,7 +3,7 @@
 -- ui might not be accurate cuz exactly recreating it is way to time consuming
 
 local STick = tick()
-local ui, settings = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Urfavsyanpseuser/Moai/main/main/CosmicUi.lua"))()
+local ui, settings = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/EXFTB/Moai/main/main/CosmicUi.lua"))()
 local lib = ui:Library()
 local togs = {
     SilentAim = {
@@ -5024,7 +5024,7 @@ if not _G.cosmicloaded and naem.Name:find("Electric State DarkRP") or naem.Name:
     
     -- Combat
 
-    getgenv().library = loadstring(game.HttpGet(game,"https://raw.githubusercontent.com/Urfavsyanpseuser/Salad/main/ASPECT/d/main/Cosmic%25V2%252%252lib"))()
+    getgenv().library = loadstring(game.HttpGet(game,"https://raw.githubusercontent.com/EXFTB/Salad/main/ASPECT/d/main/Cosmic%25V2%252%252lib"))()
     
     local lib = library.new(var.ver)
     
