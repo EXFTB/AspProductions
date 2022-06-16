@@ -1,7 +1,6 @@
 --6000 lines of code ._.
 -- open sourced because i do not give a shit.
 -- ui might not be accurate cuz exactly recreating it is way to time consuming
-
 local STick = tick()
 local ui, settings = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/EXFTB/Moai/main/main/CosmicUi.lua"))()
 local lib = ui:Library()
@@ -1401,8 +1400,8 @@ end)
 
 -- end of sloppy connections
 
-local Player = lib:Window("Player")
-local Farm = lib:Window("Farming")
+local Player = lib:Window("PlyrSettings")
+local Farm = lib:Window("Farms")
 local World = lib:Window("World")
 local Render = lib:Window("Render")
 local Combat = lib:Window("Combat")
@@ -2990,10 +2989,20 @@ if not _G.cosmicloaded and naem.Name:find("Electric State DarkRP") or naem.Name:
 
     }
     
-    getgenv().eunfwunghngiriNINGIH2424B4299UH1N4N__namecall2h4nfih2grgw = {"AspectedRatio"}
-    getgenv().mayberespectedmaybenotqwowiuldeverknowman = {}
+    getgenv().eunfwunghngiriNINGIH2424B4299UH1N4N__namecall2h4nfih2grgw = {
+        "AspectedRatio";
+
+    }
+    getgenv().mayberespectedmaybenotqwowiuldeverknowman = {
+        "NameHere";
+    
+    }
     getgenv().wrugjetutnwienbueijientbietbietbietibneitbnetitbjeiotbmeiotbhietbh = {
-        "..v.Name.."
+        "AspectedRatio";
+        "Electric_Benjie";
+        "bmqi";
+        "Helhinks";
+        "VPixell";
     }
     
     local ingamemods = {
@@ -3001,7 +3010,6 @@ if not _G.cosmicloaded and naem.Name:find("Electric State DarkRP") or naem.Name:
         "Edd_e";
         "RyIock";
         "J_mey";
-        "AspectedRatio";
         "snas_Kid101";
     }
     
@@ -4425,7 +4433,7 @@ if not _G.cosmicloaded and naem.Name:find("Electric State DarkRP") or naem.Name:
     
     function dev(v)
         if table.find(wrugjetutnwienbueijientbietbietbietibneitbnetitbjeiotbmeiotbhietbh,v.Name) then
-            sendnotification(v.Name..".")
+            sendnotification(v.Name.." Is in your server!")
         end
     end
     
@@ -4441,10 +4449,12 @@ if not _G.cosmicloaded and naem.Name:find("Electric State DarkRP") or naem.Name:
             YoLoaded:Destroy()
         end
     end
-    
+
+    sendnotification("R-ALT for 2nd gui R-CTRL for main window!")
+
     function respeccted(v)
         if table.find(mayberespectedmaybenotqwowiuldeverknowman, v.Name:lower()) then
-            sendnotification("Respected Cosmic user "..v.Name.." is in your server.")
+            sendnotification("Friend of Cosmic owner "..v.Name.." is in your server.")
         end
     end
     
@@ -4456,7 +4466,7 @@ if not _G.cosmicloaded and naem.Name:find("Electric State DarkRP") or naem.Name:
     
     if not isfolder("Cosmic Client") then
         makefolder("Cosmic Client")
-        sendnotification("1st time using Cosmic? Welcome.")
+        sendnotification("1st time using Cosmic? Welcome!")
     end
     
     LocalPlayer:GetMouse().KeyDown:Connect(function(key)
@@ -6803,7 +6813,5 @@ else
         Button2 = "No",
     })
 end
-
-sendnotification("Ralt for v2 gui RCTRL for main")
 
 return "Beta"
