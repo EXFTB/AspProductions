@@ -1,3 +1,5 @@
+--I will discontinue this due to it being broken completely  and Just continue this project myself 
+
 --[[
 	Obfuscated with Ultra Kitchen Fork Obfuscator, v0.2.4 
 	obfuscation method v2, string.
